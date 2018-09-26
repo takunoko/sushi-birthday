@@ -1,0 +1,27 @@
+{
+  "name": "SUSHI-BIRTHDAY",
+  "description": "Twitter誕生日の風船を寿司にする",
+  "version": "1.5",
+  "content_scripts": [{
+    "js": ["js/jquery-3.3.1.min.js", "js/content-script.js"],
+    "css": ["css/style.css"],
+    "matches": ["https://twitter.com/*"]
+  }],
+  "permissions": [
+    "https://twitter.com/*"
+  ],
+  "icons":{
+    "16": "img/icon/maguro-16.png",
+    "48": "img/icon/maguro-48.png",
+    "128": "img/icon/maguro-128.png"
+  },
+  "browser_action": {
+    "default_title": "Twitterの誕生日風船を寿司にするプラグイン"
+  },
+  "web_accessible_resources": [
+    "img/*",
+    "js/*",
+    "css/*"
+  ],
+  "manifest_version": 2
+}
